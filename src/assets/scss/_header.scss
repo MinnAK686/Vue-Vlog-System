@@ -1,0 +1,25 @@
+@use "bs" as *;
+
+.navbar {
+  margin-bottom: 2rem;
+  padding: 2rem 0.385rem;
+  .navbar-brand {
+    font-weight: 700;
+  }
+  .navbar-nav {
+    .nav-item {
+      
+      .nav-link {
+        color: $gray-700;
+        font-weight: 550;
+        font-size: 1.1rem;
+        margin: 0 0.5rem;
+        transition: $transition-2;
+        &:hover {
+          color: $gray-600;
+        }
+      }
+    }
+  }
+}
+

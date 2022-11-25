@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Customized -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- Additional CSS -->
+
+
+    <title>Bloggy Mod</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <div class="container-fluid">
+          <router-link to="/" class="navbar-brand">Bloggy</router-link>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Post Entries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="post-detail.html">Post Detail</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container">
+        <div class="row justify-content-start ">
+            <!-- Posts -->
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="card post">
+                    <div class="img-fluid">
+                      <img src="./assets/images/blog-post-03.jpg" class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                      <div class="post-header">
+                        <h4 class="post-category">Information Technology</h4>
+                        <h5 class="post-title">
+                            <a href="#">Title One</a>
+                        </h5>
+                        <div class="post-info">
+                          <span>
+                            <a href="#">Admin</a>
+                          </span>
+                          <span>
+                            <a href="#">19 / 11 / 2022</a>
+                          </span>
+                          <span>
+                            <a href="#">10 Comments</a>
+                          </span>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="post-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident culpa eligendi rerum quia dolorem consequuntur voluptatem delectus suscipit veritatis? Culpa, a cumque nobis exercitationem, magni libero quisquam excepturi ullam iusto quidem fuga sunt. Mollitia accusantium expedita architecto sit vero optio nam alias assumenda ex, voluptatem reprehenderit nihil cupiditate reiciendis! Assumenda ab ducimus quod distinctio quia, illum a perferendis maxime aut inventore itaque veritatis non deleniti cupiditate vel reiciendis deserunt! Architecto accusantium id officiis voluptate ullam. Beatae dignissimos recusandae enim itaque, sit error pariatur cum doloribus voluptatibus magni consequuntur ullam vero! Tempora facilis voluptate, sapiente enim eaque quaerat cumque quia.</p>
+                      </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <div class="d-md-flex justify-content-between d-block">
+                        <div class="tags">
+                          <i class="fa fa-tags"></i>
+                            <span>
+                              <a href="#">tags one</a>
+                            </span>
+                            <span>
+                                <a href="#">tags two</a>
+                            </span>
+                            <span>
+                                <a href="#">tags three</a>
+                            </span>
+                        </div>
+                        <div class="share">
+                          <i class="fa fa-share"></i>
+                          <span>
+                            <a href="#">Facebook</a>
+                          </span>
+                          <span>
+                            <a href="#">Twitter</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card post">
+                    <div class="img-fluid">
+                      <img src="./assets/images/blog-post-03.jpg" class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                      <div class="post-header">
+                        <h4 class="post-category">Information Technology</h4>
+                        <h5 class="post-title">
+                            <a href="#">Title One</a>
+                        </h5>
+                        <div class="post-info">
+                          <span>
+                            <a href="#">Admin</a>
+                          </span>
+                          <span>
+                            <a href="#">19 / 11 / 2022</a>
+                          </span>
+                          <span>
+                            <a href="#">10 Comments</a>
+                          </span>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="post-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident culpa eligendi rerum quia dolorem consequuntur voluptatem delectus suscipit veritatis? Culpa, a cumque nobis exercitationem, magni libero quisquam excepturi ullam iusto quidem fuga sunt. Mollitia accusantium expedita architecto sit vero optio nam alias assumenda ex, voluptatem reprehenderit nihil cupiditate reiciendis! Assumenda ab ducimus quod distinctio quia, illum a perferendis maxime aut inventore itaque veritatis non deleniti cupiditate vel reiciendis deserunt! Architecto accusantium id officiis voluptate ullam. Beatae dignissimos recusandae enim itaque, sit error pariatur cum doloribus voluptatibus magni consequuntur ullam vero! Tempora facilis voluptate, sapiente enim eaque quaerat cumque quia.</p>
+                      </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <div class="d-md-flex justify-content-between d-block">
+                        <div class="tags">
+                          <i class="fa fa-tags"></i>
+                            <span>
+                              <a href="#">tags one</a>
+                            </span>
+                            <span>
+                                <a href="#">tags two</a>
+                            </span>
+                            <span>
+                                <a href="#">tags three</a>
+                            </span>
+                        </div>
+                        <div class="share">
+                          <i class="fa fa-share"></i>
+                          <span>
+                            <a href="#">Facebook</a>
+                          </span>
+                          <span>
+                            <a href="#">Twitter</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card post">
+                    <div class="img-fluid">
+                      <img src="./assets/images/blog-post-03.jpg" class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                      <div class="post-header">
+                        <h4 class="post-category">Information Technology</h4>
+                        <h5 class="post-title">
+                            <a href="#">Title One</a>
+                        </h5>
+                        <div class="post-info">
+                          <span>
+                            <a href="#">Admin</a>
+                          </span>
+                          <span>
+                            <a href="#">19 / 11 / 2022</a>
+                          </span>
+                          <span>
+                            <a href="#">10 Comments</a>
+                          </span>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="post-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident culpa eligendi rerum quia dolorem consequuntur voluptatem delectus suscipit veritatis? Culpa, a cumque nobis exercitationem, magni libero quisquam excepturi ullam iusto quidem fuga sunt. Mollitia accusantium expedita architecto sit vero optio nam alias assumenda ex, voluptatem reprehenderit nihil cupiditate reiciendis! Assumenda ab ducimus quod distinctio quia, illum a perferendis maxime aut inventore itaque veritatis non deleniti cupiditate vel reiciendis deserunt! Architecto accusantium id officiis voluptate ullam. Beatae dignissimos recusandae enim itaque, sit error pariatur cum doloribus voluptatibus magni consequuntur ullam vero! Tempora facilis voluptate, sapiente enim eaque quaerat cumque quia.</p>
+                      </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                      <div class="d-md-flex justify-content-between d-block">
+                        <div class="tags">
+                          <i class="fa fa-tags"></i>
+                            <span>
+                              <a href="#">tags one</a>
+                            </span>
+                            <span>
+                                <a href="#">tags two</a>
+                            </span>
+                            <span>
+                                <a href="#">tags three</a>
+                            </span>
+                        </div>
+                        <div class="share">
+                          <i class="fa fa-share"></i>
+                          <span>
+                            <a href="#">Facebook</a>
+                          </span>
+                          <span>
+                            <a href="#">Twitter</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="col-sm-12 col-md-12 col-lg-4 mt-4 mt-lg-0 sidebar">
+                <form>
+                  <input type="search" class="form-control" placeholder="Search ...">
+                </form>
+                <div class="recent-posts">
+                  <h4>Recent Posts</h4> <hr>
+                  <div class="recent-post">
+                    <h5>
+                      <router-link to="/">Suspendisse et metus nec libero ultrices varius eget in risus</router-link>
+                    </h5>
+                    <p>19/11/2022</p>
+                  </div>
+                  <div class="recent-post">
+                    <h5>
+                      <router-link to="/">Suspendisse et metus nec libero ultrices varius eget in risus</router-link>
+                    </h5>
+                    <p>19/11/2022</p>
+                  </div>
+                  <div class="recent-post">
+                    <h5>
+                      <router-link to="/">Suspendisse et metus nec libero ultrices varius eget in risus</router-link>
+                    </h5>
+                    <p>19/11/2022</p>
+                  </div>
+                </div>
+                <div class="categories">
+                  <h4>Categories</h4> <hr>
+                  <ul>
+                    <li>
+                      <router-link to="/">technology</router-link>
+                    </li>
+                    <li>
+                      <router-link to="/">lifestyle</router-link>
+                    </li>
+                    <li>
+                      <router-link to="/">creative ideas</router-link>
+                    </li>
+                    <li>
+                      <router-link to="/">creative and unique</router-link>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tag-clouds">
+                  <h4>Tag Clouds</h4> <hr>
+                  <div class="tags">
+                    <span>
+                      <button class="btn btn-outline-primary">tag one</button>
+                      <button class="btn btn-outline-primary">tag two</button>
+                      <button class="btn btn-outline-primary">tag three</button>
+                    </span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
