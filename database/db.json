@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "title one",
+            "detail": "detail one",
+            "tags": [
+                "tag one","tag two"
+            ],
+            "category": "test",
+            "author": "admin"
+        },
+        {
+            "id": 2,
+            "title": "title two",
+            "detail": "detail two",
+            "tags": [
+                "tag one","tag two"
+            ],
+            "category": "test",
+            "author": "admin"
+        },
+        {
+            "id": 3,
+            "title": "title three",
+            "detail": "detail three",
+            "tags": [
+                "tag one","tag two"
+            ],
+            "category": "test",
+            "author": "admin"
+        }
+    ]
+}

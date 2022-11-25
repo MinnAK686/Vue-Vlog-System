@@ -5,9 +5,7 @@ import store from './store'
 
 // Link Bootstrap
 import './assets/css/bootstrap.css'
-
-// Google Material Icons
-import 'material-icons/iconfont/material-icons.css'
+import './assets/font/bootstrap-icons.css'
 
 // Import Bootstrap JS
 import 'bootstrap/dist/js/bootstrap.bundle.min'
