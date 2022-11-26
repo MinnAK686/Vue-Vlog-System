@@ -1,34 +1,58 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "title one",
-            "detail": "detail one",
-            "tags": [
-                "tag one","tag two"
-            ],
-            "category": "test",
-            "author": "admin"
-        },
-        {
-            "id": 2,
-            "title": "title two",
-            "detail": "detail two",
-            "tags": [
-                "tag one","tag two"
-            ],
-            "category": "test",
-            "author": "admin"
-        },
-        {
-            "id": 3,
-            "title": "title three",
-            "detail": "detail three",
-            "tags": [
-                "tag one","tag two"
-            ],
-            "category": "test",
-            "author": "admin"
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "title one",
+      "detail": "detail one",
+      "tags": [
+        "tag one",
+        "tag two"
+      ],
+      "category": "test",
+      "author": "admin"
+    },
+    {
+      "id": 2,
+      "title": "title two",
+      "detail": "detail two",
+      "tags": [
+        "tag three",
+        "tag four"
+      ],
+      "category": "test",
+      "author": "admin"
+    },
+    {
+      "id": 3,
+      "title": "title three",
+      "detail": "detail three",
+      "tags": [
+        "tag one",
+        "tag four"
+      ],
+      "category": "test",
+      "author": "admin"
+    },
+    {
+      "title": "Techno",
+      "detail": "Techno detail",
+      "category": "Techno",
+      "tags": [
+        "techno",
+        "IT"
+      ],
+      "author": "admin",
+      "id": 4
+    },
+    {
+      "title": "Post Add",
+      "detail": "Detail Add",
+      "category": "Add",
+      "tags": [
+        "IT"
+      ],
+      "author": "admin",
+      "id": 5
+    }
+  ]
 }

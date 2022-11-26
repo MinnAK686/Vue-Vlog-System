@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import PostDetailView from '../views/PostDetailView.vue'
 import PostTagsView from '../views/PostTagsView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
+import CreatePostView from '../views/CreatePostView.vue'
 
 const routes = [
   {
@@ -34,11 +35,20 @@ const routes = [
     path: '/:catchAll(.*)',
     name: 'not-found',
     component: NotFoundView
+  },
+  {
+    path: '/create-post',
+    name: 'create-post',
+    component: CreatePostView
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
   routes
 })
 

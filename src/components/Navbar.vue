@@ -14,7 +14,7 @@
                 <a class="nav-link" href="#">Post Entries</a>
               </li>
               <li class="nav-item">
-                <router-link :to="{name: 'post-detail',params:{id}}" class="nav-link">Post Detail</router-link>
+                <router-link :to="{name: 'create-post'}" class="nav-link">Create Post</router-link>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

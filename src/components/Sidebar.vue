@@ -45,19 +45,37 @@
         <div class="tag-clouds">
             <h4>Tag Clouds</h4> <hr>
             <div class="tags">
-            <span>
-                <button class="btn btn-outline-primary">tag one</button>
-                <button class="btn btn-outline-primary">tag two</button>
-                <button class="btn btn-outline-primary">tag three</button>
-            </span>
+                <span v-for="tag in uniqueTags" :key="tag">
+                    <span>
+                        <router-link :to="{name: 'tags',params: {tag}}" class="btn btn-outline-primary">{{tag}}</router-link>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import { ref } from '@vue/reactivity';
 export default {
+    props: ["posts"],
+    setup(props) {
+        let posts = props.posts;
+        let tags = ref([])
+        let uniqueTags = ref([]);
+        posts.forEach(post => { 
+            post.tags.forEach(tag => {
+                tags.value.push(tag);
+            }) 
+        })
+        uniqueTags.value = tags.value.filter((tag,index,array) => {
+            return array.indexOf(tag) === index; 
+        })
 
+        return {
+            uniqueTags
+        }
+    }
 }
 </script>
 

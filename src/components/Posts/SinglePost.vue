@@ -5,13 +5,13 @@
     </div>
     <div class="card-body">
       <div class="post-header">
-        <h4 class="post-category">Information Technology</h4>
+        <h4 class="post-category">{{post.category}}</h4>
         <h5 class="post-title">
-            <a href="#">Title One</a>
+            <router-link :to="{name: 'post-detail',params: {id: post.id}}">{{post.title}}</router-link>
         </h5>
         <div class="post-info">
           <span>
-            <a href="#">Admin</a>
+            <a href="#">{{post.author}}</a>
           </span>
           <span>
             <a href="#">19 / 11 / 2022</a>
@@ -30,14 +30,10 @@
       <div class="d-md-flex justify-content-between d-block">
         <div class="tags">
           <i class="bi bi-tags-fill"></i>
-            <span>
-              <a href="#">tags one</a>
-            </span>
-            <span>
-                <a href="#">tags two</a>
-            </span>
-            <span>
-                <a href="#">tags three</a>
+            <span v-for="tag in post.tags" :key="tag">
+              <span>
+                <router-link :to="{name: 'tags',params:{tag}}">{{tag}}</router-link>
+              </span>
             </span>
         </div>
         <div class="share">
@@ -56,7 +52,7 @@
 
 <script>
 export default {
-
+  props: ["post"],
 }
 </script>
 
