@@ -4,7 +4,6 @@
       <DetailPost :post="post"></DetailPost>
     </div>
     <div v-else>
-      Loading...
       <Loading></Loading>
     </div>
   </div>
